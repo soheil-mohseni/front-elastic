@@ -1,11 +1,9 @@
 import { Icon } from "@iconify-icon/react";
-import { startTransition, useCallback, useState } from "react";
-import debounce from "lodash.debounce";
 import useDebouncedSearch from "../hook/useDebouncedSearch";
 
 function HeadSidebar() {
 
-  const [search, handleSearchChange] = useDebouncedSearch();
+  const [search, handleSearchChange]:any = useDebouncedSearch();
 
   return (
     <div className="w-[100%] h-[15vh]  flex flex-col items-center justify-around">
